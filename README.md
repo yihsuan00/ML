@@ -1,23 +1,31 @@
-#### HW3 MLfoundation
+#### HW2 MLfoundation
 
-##### problem 7
-- dataloader to load the training data and preprocess the data
-- gradient_descent
-    - calculate the gradient in each iteration
-    - average the gradients
-- SGD
-    - pick the specific data to calculate the gradient in each iteration
-- plot the time stamp versus error(Ein)
-##### problem 8
-- dataloader to load the training data and preprocess the data
-- gradient_descent
-    - calculate the gradient in each iteration
-    - average the gradients
-- SGD
-    - pick the specific data to calculate the gradient in each iteration
-- plot the time stamp versus error(Eout)
+##### introduce function
 
-##### operate function
-- for problem 7
-    - python ML_HW3.7.py [training data]
-    - python ML_HW3.8.py [training data] [testing data]
+###### Getdata
+- variable: `size`, `ratio`(default = 0.2)
+- to make the data with the noise ratio 0.2
+- record the data sign
+
+###### Theta
+- variable: `data`, `size`(default = 20)
+- to consider the two ends point and the adjacent points
+
+###### Decision_Stump 
+- variable: `data`, `label`, `size`
+- consider the case of `s`= 1 and `s` = -1
+- calculate error and return the best_s, best_theta and errot
+
+###### calculate
+- variable" `times`, `figname`, `size`
+- compute for the `times` iterations
+- append the Ein and Eout into array 
+- plot the histogram of `Ein-Eout`
+- save the fig with `figname`
+
+##### how to operate the code
+- Problem 7
+    - python ML_HW2.py 1000 -u Hw_2.7.1 20
+- Problem 8
+    - python ML_HW2.py 1000 -u Hw_2.8.1 2000
+
