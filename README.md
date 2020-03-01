@@ -1,27 +1,23 @@
-#### HW1 MLfoundation
+#### HW3 MLfoundation
 
-##### problem 6
-- dataloader to load the data and preprocess the data
-- PLA function
-    - using PLA algorithm to calculate the best w
-    - return the `times`(for problem 6) and `w`(for problem 8) 
-- run the 1126 times and plot the histrogram
 ##### problem 7
-- dataloader to load both the training data and testing data
-- PocketPLA
-    - using the pocket algorithm to find the bestline over lots of line
-    - return the `wp`(bestline) and `error`
-    - `wp` for the testing data to evaluate the training result
-    - `error` will help me more easier to track my function 
-- run the 1126 times(limited in 100 updates) and plot the histrogram
+- dataloader to load the training data and preprocess the data
+- gradient_descent
+    - calculate the gradient in each iteration
+    - average the gradients
+- SGD
+    - pick the specific data to calculate the gradient in each iteration
+- plot the time stamp versus error(Ein)
 ##### problem 8
-- dataloader to load both the training data and testing data
-- PLA function
-    - using PLA algorithm to calculate the best w in finite updates
-    - return the `times` and `w`
-- run the 1126 times(limited in 100 updates) and plot the histrogram
+- dataloader to load the training data and preprocess the data
+- gradient_descent
+    - calculate the gradient in each iteration
+    - average the gradients
+- SGD
+    - pick the specific data to calculate the gradient in each iteration
+- plot the time stamp versus error(Eout)
 
 ##### operate function
-- using jupyter to run the code is better
-- using python will need to annotate part of the code or the picture will not show properly
-
+- for problem 7
+    - python ML_HW3.7.py [training data]
+    - python ML_HW3.8.py [training data] [testing data]
